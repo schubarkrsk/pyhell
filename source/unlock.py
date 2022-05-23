@@ -25,6 +25,8 @@ if __name__ == "__main__":
         os.system("COLOR 4F")
     except:
         pass
+    finally:
+        print("WELCOME TO HELL")
 
     while True:
         print(MSG_STR)
