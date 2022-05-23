@@ -1,11 +1,6 @@
 import hashlib
 import os
-import subprocess
-import psutil
-import ctypes
 import sys
-import tkinter
-import keyboard
 import winreg
 
 
