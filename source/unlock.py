@@ -20,7 +20,7 @@ def unlock_me(accepter=False):
         print("Fuck you, Kaspersky!")
 
 
-if __name__ == "__main__":
+def main_unlocker():
     try:
         os.system("COLOR 4F")
     except:
@@ -48,3 +48,7 @@ if __name__ == "__main__":
                 break
         else:
             unlock_me()
+
+
+if __name__ == "__main__":
+    main_unlocker()
