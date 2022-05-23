@@ -1,10 +1,7 @@
-import os
 import sys
 
 import bin.install
-from bin import themes
-
-
+from bin.assets import themes
 
 if __name__ == "__main__":
 
@@ -21,4 +18,3 @@ if __name__ == "__main__":
 
     else:
         pass
-
