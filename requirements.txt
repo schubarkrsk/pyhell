@@ -1,0 +1,9 @@
+cffi==1.15.0
+cryptography==37.0.2
+pycparser==2.21
+pynput==1.7.6
+pyobjc-core==8.5
+pyobjc-framework-ApplicationServices==8.5
+pyobjc-framework-Cocoa==8.5
+pyobjc-framework-Quartz==8.5
+six==1.16.0
