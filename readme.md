@@ -30,14 +30,28 @@
 
 ## DOCUMENTATION FOR DEVELOPER AND AV MANUFACTURE
 
-### Encryptor module
+### PyHELL_Cryptor module
 WARNING >> Always keep backup of your machine and before first run generate key file. If you're lost it all you data lost!
 
 Directories where key file located
 * Windows >> C:\User\Foo\Local\Temp\Bar.com (where "Bar" is Name of your malware from bin.configuration.Settings)
 * UNIX >> /opt/temp.com
 
+---
 How to create test key?
 * in source directory run command 
   * `python pyhell_manager.py --dbg --get-key` for Windows
   * `python3 pyhell_manager.py --dbg --get-key` for UNIX
+
+After run command in source folder create file "backup.com"
+
+---
+Encryption
+
+* With using .com file with key, malware encrypt files in target folders
+* All encrypted files save into sqlite database
+
+---
+Decryption
+
+With using .com file with key and sqlite database, malware decrypt files
