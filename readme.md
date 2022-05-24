@@ -30,4 +30,12 @@
 
 ## DOCUMENTATION FOR DEVELOPER AND AV MANUFACTURE
 
-in progress
+### Encryptor module
+WARNING >> Always keep backup of your machine and before first run generate key file. If you're lost it all you data lost!
+
+Directories where key file located
+* Windows >> C:\User\Foo\Local\Temp\Bar.com (where "Bar" is Name of your malware from bin.configuration.Settings)
+* UNIX >> /opt/temp.com
+
+How to create test key?
+* in source directory run command `python pyhell_manager.py --dbg --get-key` for Windows and `python3 pyhell_manager.py --dbg --get-key`
