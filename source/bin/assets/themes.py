@@ -35,7 +35,7 @@ def change_color(color="4F"):
 
     :return:
     """
-    if sys.platform == "win3212":
+    if sys.platform == "win32":
         str_col = f"color {color}"
         os.system(str_col)
 

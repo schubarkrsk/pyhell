@@ -212,3 +212,4 @@ dmypy.json
 cython_debug/
 
 !/source/bin/assets/pyhell_osx_style.terminal
+!/BUILD.py

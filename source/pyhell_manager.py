@@ -1,5 +1,7 @@
 import sys
 
+import keyboard
+
 import bin.install
 from bin.assets import themes
 from bin.security.cryptor.main import PyHell_Cryptor
@@ -29,6 +31,8 @@ if __name__ == "__main__":
 
     else:
         pass
+
+    keyboard.wait()
 
 
 
