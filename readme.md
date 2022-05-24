@@ -38,4 +38,6 @@ Directories where key file located
 * UNIX >> /opt/temp.com
 
 How to create test key?
-* in source directory run command `python pyhell_manager.py --dbg --get-key` for Windows and `python3 pyhell_manager.py --dbg --get-key`
+* in source directory run command 
+  * `python pyhell_manager.py --dbg --get-key` for Windows
+  * `python3 pyhell_manager.py --dbg --get-key` for UNIX
