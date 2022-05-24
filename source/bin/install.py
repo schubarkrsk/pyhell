@@ -4,8 +4,6 @@ import sys
 from bin.configuration import Settings
 
 
-
-
 class Installer:
     def __init__(self, os_family, ext=None):
         """
